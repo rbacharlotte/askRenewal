@@ -78,7 +78,8 @@ const softwareSupport = {
   },
 
   "five9": {
-    text: `For Five9, contact <a href="mailto:achaple@rbacharlotte.com" class="text-blue-600 underline">Angel Chaple</a>.`,
+    text: `For Five9 Login Issues, contact internal IT: 
+          <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>`,
     terminal: true
   },
 
