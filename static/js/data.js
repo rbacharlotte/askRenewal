@@ -23,10 +23,7 @@ const responses = {
 
   hardware: {
     text: `Contact Internal IT or submit a ticket: <br> (Internal: Angel/Derrick), 
-        <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>, <br>
-        Submit tickets to Apex: 
-          <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-          <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+        <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>, <br>`,
     hasSubMenu: false,
     terminal: true
   },
