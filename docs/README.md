@@ -69,11 +69,12 @@ askRenewal is a simple, interactive **web-based IT directory ** designed to assi
 ## 👨‍💻 Author
 
 **Angel Chaple**
-IT Specialist | Developer | Systems Enthusiast
-📧 [achaplejw@gmail.com](mailto:achaplejw@gmail.com)
+IT Specialist | Software Developer | Systems Enthusiast
+📧 [achaple@rbacharlotte.com](mailto:achaple@rbacharlotte.com)
 💼 [LinkedIn](https://www.linkedin.com/in/angelchaple)
 🌐 [GitHub](https://github.com/achaple0)
 
+@ Renewal By Andersen of the Carolinas
 ---
 
 ## 📄 License
