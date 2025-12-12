@@ -37,7 +37,7 @@ askRenewal is a simple, interactive **web-based IT directory ** designed to assi
 
 ## 📸 Example Screenshot
 
-![askRenewal Screenshot](assets/askRenewal-screenshot.png)
+![askRenewal Screenshot](./askRenewal/assets/askRenewal-screenshot.png)
 
 
 ## 💾 Setup & Usage
