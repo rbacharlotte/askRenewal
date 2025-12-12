@@ -37,7 +37,7 @@ askRenewal is a simple, interactive **web-based IT directory ** designed to assi
 
 ## 📸 Example Screenshot
 
-<img width="1910" height="962" alt="Screenshot 2025-10-30 at 10 40 52" src="https://github.com/rbacharlotte/askRenewal/issues/5#issue-3724094207" />
+![askRenewal Screenshot](assets/askRenewal-screenshot.png)
 
 
 ## 💾 Setup & Usage
