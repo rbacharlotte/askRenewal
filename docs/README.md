@@ -66,7 +66,7 @@ askRenewal is a simple, interactive **web-based IT directory ** designed to assi
 ## 👨‍💻 Author
 
 **Angel Chaple**
-IT Specialist | Software Developer | Systems Enthusiast
+IT Specialist | Software Developer | Systems Enthusiast <br>
 📧 [achaple@rbacharlotte.com](mailto:achaple@rbacharlotte.com) <br>
 🌐 [GitHub](https://github.com/rbacharlotte)
 
