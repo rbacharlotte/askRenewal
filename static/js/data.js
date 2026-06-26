@@ -23,7 +23,7 @@ const responses = {
 
   hardware: {
     text: `Contact Internal IT or submit a ticket: <br> (Internal: Angel/Derrick), 
-        <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>, <br>`,
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=-nTBzeyRlE6TkRgmWfkrVlZS8BJzWy9Cpqewcx-rfglUQ0FSSFJETFg1WTEwTFBNTUJTMlpNTlZKUy4u&origin=lprLink&route=shorturl" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>, <br>`,
     hasSubMenu: false,
     terminal: true
   },
