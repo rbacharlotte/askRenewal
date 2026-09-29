@@ -31,7 +31,7 @@ const responses = {
 
   hardware: {
     troubleshooting: [
-      "Restart the device — this resolves a surprising number of hardware quirks",
+      "Restart the device — this resolves a surprising number of hardware quirks." + 'SOP Link: ' + '<a href="https://www.loom.com/share/908d585ab84642bcbde703a4c102752e" target="_blank" class="text-blue-600 underline">Restarting Your Device</a>',
       "Check all cable connections (power, monitor, dock, peripherals) are fully seated",
       "For peripherals (mouse, keyboard, headset), try a different USB port",
       "For docking stations, try disconnecting and reconnecting the laptop from the dock",
@@ -49,7 +49,7 @@ const responses = {
 
   network: {
     troubleshooting: [
-      "Restart your computer, this refreshes the network connection",
+      "Restart your computer, this refreshes the network connection" + 'SOP Link: ' + '<a href="https://www.loom.com/share/908d585ab84642bcbde703a4c102752e" target="_blank" class="text-blue-600 underline">Restarting Your Device</a>',
       "If on Wi-Fi, try toggling Wi-Fi off and back on, or switching to a wired connection if available",
       "Check if others nearby are also having connectivity issues (helps identify a broader outage vs. your device)",
       "For VPN issues, fully disconnect and reconnect the VPN client",
@@ -65,7 +65,7 @@ const responses = {
 
   other: {
     troubleshooting: [
-      "Restart the affected application or device before reaching out",
+      "Restart the affected application or device before reaching out" + 'SOP Link: ' + '<a href="https://www.loom.com/share/908d585ab84642bcbde703a4c102752e" target="_blank" class="text-blue-600 underline">Restarting Your Device</a>',
       "Note exactly what you were doing when the issue occurred, this speeds up diagnosis",
       "Check if the issue is happening for others on your team, or just you",
       "Take a screenshot of any error message if possible"
@@ -83,7 +83,7 @@ const softwareSupport = {
   "ms-365-apps": {
     troubleshooting: [
       "Close and reopen the specific app (Word, Excel, Outlook, etc.)",
-      "Restart your computer, this resolves many temporary licensing/sync glitches",
+      "Restart your computer, this resolves many temporary licensing/sync glitches" + 'SOP Link: ' + '<a href="https://www.loom.com/share/908d585ab84642bcbde703a4c102752e" target="_blank" class="text-blue-600 underline">Restarting Your Device</a>',
       "Check for pending updates: File > Account > Update Options > Update Now",
       "Try signing out of your Microsoft account within the app and signing back in",
       "If a specific file won't open, try opening it from the web version (office.com) to isolate the problem"
@@ -98,7 +98,7 @@ const softwareSupport = {
   "enabled": {
     troubleshooting: [
       "Refresh the page or fully close and reopen your browser",
-      "Try clearing your browser cache, or open the site in an incognito/private window to rule out a cache issue",
+      "Try clearing your browser cache, or open the site in an incognito/private window to rule out a cache issue" + 'SOP Link: ' + '<a href="https://www.youtube.com/watch?v=FVdGaaLZnXU" target="_blank" class="text-blue-600 underline">Clearing Browser Cache</a>', + 'SOP Link: ' + '<a href="https://www.youtube.com/watch?v=LptiifP7iB0" target="_blank" class="text-blue-600 underline">Incognito/Private Window Tutorial</a>',
       "Confirm you're using a supported browser (Chrome or Edge recommended)",
       "Double check your login credentials are correct before assuming it's a system issue"
     ],
@@ -126,7 +126,7 @@ const softwareSupport = {
   "ensemble": {
     troubleshooting: [
       "Refresh the page or fully close and reopen your browser",
-      "Try an incognito/private browser window to rule out a cache or extension conflict",
+      "Try an incognito/private browser window to rule out a cache or extension conflict" + ' SOP Link: ' + '<a href="https://www.youtube.com/watch?v=LptiifP7iB0" target="_blank" class="text-blue-600 underline">Incognito/Private Window Tutorial</a>',
       "Confirm you're using a supported browser (Chrome or Edge recommended)",
       "Note the exact screen/step where the issue occurs, this helps Fetch troubleshoot faster"
     ],
@@ -139,8 +139,8 @@ const softwareSupport = {
 
   "five9": {
     troubleshooting: [
-      "Update both the Five9 Chrome extension and Google Chrome to their latest versions" + ' SOP Link: ' + '<a href="https://www.loom.com/share/d3ac79675e7746f0b533a1f0325b030a" target="_blank" class="text-blue-600 underline">Five9 Chrome Extension Update</a>',
-      "Fully close and reopen Chrome (not just the tab) to refresh the extension's connection",
+      "Update both the Five9 Chrome extension and Google Chrome to their latest versions." + ' SOP Link: ' + '<a href="https://www.loom.com/share/d3ac79675e7746f0b533a1f0325b030a" target="_blank" class="text-blue-600 underline">Five9 Chrome Extension Update</a>',
+      "Fully close and reopen Chrome (not just the tab) to refresh the extension's connection" + ' SOP Link: ' + '<a href="https://www.loom.com/share/0a08f1c42d93452595ff11cf2a33584a" target="_blank" class="text-blue-600 underline">Fully Close and Reopen Chrome</a>',
       "Check if you're logged into Five9 in more than one place (another tab, device, or browser profile)",
       "If your status seems stuck or incorrect, try logging out of Five9 completely and logging back in",
       "Note the time the issue occurred and what you were doing (status change, call, screen lock, etc.)"
@@ -183,7 +183,7 @@ const passwordSupport = {
     troubleshooting: [
       "Double-check caps lock isn't on, and that you're using your most recent password",
       "Try logging in at office.com directly in a browser to isolate whether it's app-specific",
-      "Clear your browser cache or try an incognito/private window",
+      "Clear your browser cache or try an incognito/private window" + 'SOP Link: ' + '<a href="https://www.youtube.com/watch?v=FVdGaaLZnXU" target="_blank" class="text-blue-600 underline">Clearing Browser Cache</a>',
       "If prompted for multi-factor authentication, confirm your authentication method (phone/app) is working"
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
@@ -207,7 +207,7 @@ const passwordSupport = {
   "enabled-password": {
     troubleshooting: [
       "Double-check caps lock isn't on, and that you're using your most recent password",
-      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Try an incognito/private browser window to rule out a saved-password conflict" + 'SOP Link: ' + '<a href="https://www.youtube.com/watch?v=LptiifP7iB0" target="_blank" class="text-blue-600 underline">Incognito/Private Window Tutorial</a>',
       "Confirm you're on the correct login page/URL"
     ],
     turnaround: "Typically 1-2 business days once submitted to Fetch",
@@ -220,7 +220,7 @@ const passwordSupport = {
   "ensemble-password": {
     troubleshooting: [
       "Double-check caps lock isn't on, and that you're using your most recent password",
-      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Try an incognito/private browser window to rule out a saved-password conflict" + 'SOP Link: ' + '<a href="https://www.youtube.com/watch?v=LptiifP7iB0" target="_blank" class="text-blue-600 underline">Incognito/Private Window Tutorial</a>',
       "Confirm you're on the correct login page/URL"
     ],
     turnaround: "Typically 1-2 business days once submitted to Fetch",
@@ -233,7 +233,7 @@ const passwordSupport = {
   "culture-suite-password": {
     troubleshooting: [
       "Double-check caps lock isn't on, and that you're using your most recent password",
-      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Try an incognito/private browser window to rule out a saved-password conflict" + 'SOP Link: ' + '<a href="https://www.youtube.com/watch?v=LptiifP7iB0" target="_blank" class="text-blue-600 underline">Incognito/Private Window Tutorial</a>',
       "Confirm you're on the correct login page/URL"
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
@@ -246,7 +246,7 @@ const passwordSupport = {
   "rforce-password": {
     troubleshooting: [
       "Double-check caps lock isn't on, and that you're using your most recent password",
-      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Try an incognito/private browser window to rule out a saved-password conflict" + 'SOP Link: ' + '<a href="https://www.youtube.com/watch?v=LptiifP7iB0" target="_blank" class="text-blue-600 underline">Incognito/Private Window Tutorial</a>',
       "Confirm you're on the correct login page/URL"
     ],
     turnaround: "Typically 1-2 business days once submitted to Fetch",
