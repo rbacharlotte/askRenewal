@@ -139,7 +139,7 @@ const softwareSupport = {
 
   "five9": {
     troubleshooting: [
-      "Update both the Five9 Chrome extension and Google Chrome to their latest versions",
+      "Update both the Five9 Chrome extension and Google Chrome to their latest versions" + ' SOP Link: ' + '<a href="https://www.loom.com/share/d3ac79675e7746f0b533a1f0325b030a" target="_blank" class="text-blue-600 underline">Five9 Chrome Extension Update</a>',
       "Fully close and reopen Chrome (not just the tab) to refresh the extension's connection",
       "Check if you're logged into Five9 in more than one place (another tab, device, or browser profile)",
       "If your status seems stuck or incorrect, try logging out of Five9 completely and logging back in",
