@@ -8,15 +8,17 @@ const responses = {
   },
 
   email: {
-    text: `For email issues, contact Apex: 
-          <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-          <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Close Outlook all the way (click the X), wait a few seconds, then open it again.",
-      "If that does not help, restart your computer and try Outlook one more time.",
-      "If email still does not work, please contact Apex using the information below."
+      "Double-check you're typing your password correctly — caps lock can cause silent failures",
+      "Try logging in from a different device (phone, another PC) to see if it's account-wide or device-specific",
+      "If using Outlook desktop, try closing and reopening the app, or restarting your computer",
+      "Check outlook.office.com directly in a browser to see if the issue is with the app or your account",
+      "Confirm you're not out of mailbox storage (a full inbox can cause send/receive errors)"
     ],
-    turnaround: "Usually the same business day after you call or submit a ticket. Bigger mailbox changes can take 1–2 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Apex",
+    text: `For email issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
   },
@@ -28,43 +30,50 @@ const responses = {
   },
 
   hardware: {
-    text: `Contact Internal IT or submit a ticket: <br> (Internal: Angel/Derrick), 
-        <a href="https://forms.office.com/pages/responsepage.aspx?id=-nTBzeyRlE6TkRgmWfkrVlZS8BJzWy9Cpqewcx-rfglUQ0FSSFJETFg1WTEwTFBNTUJTMlpNTlZKUy4u&origin=lprLink&route=shorturl" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>, <br>`,
     troubleshooting: [
-      "Turn the device all the way off, wait about 30 seconds, then turn it back on.",
-      "If it is a laptop, make sure the charger is plugged into the wall and into the computer.",
-      "If a cord looks loose (keyboard, mouse, or monitor), gently push it in until it feels snug.",
-      "If it still will not work, please reach out to Internal IT using the information below."
+      "Restart the device — this resolves a surprising number of hardware quirks",
+      "Check all cable connections (power, monitor, dock, peripherals) are fully seated",
+      "For peripherals (mouse, keyboard, headset), try a different USB port",
+      "For docking stations, try disconnecting and reconnecting the laptop from the dock",
+      "Note any error messages, unusual sounds, or lights, this helps IT diagnose faster"
     ],
-    turnaround: "Quick help is often the same business day. If something needs to be repaired or replaced, it can take 2–5 business days.",
+    turnaround: "Same business day for internal IT (Angel/Derrick) when possible; 1-2 business days if escalated to Apex",
+    text: `Contact Internal IT or submit a ticket: <br> (Internal: Angel/Derrick), 
+<a href="mailto:achaple@rbacharlotte.com" class="text-blue-600 underline">Angel Chaple</a> <br>
+        Submit tickets to Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
   },
 
   network: {
-    text: `For network issues, contact Apex: 
-          <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-          <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Turn Wi‑Fi off, wait a few seconds, then turn it back on.",
-      "Restart your computer (or phone, if that is what you are using).",
-      "If the internet still does not work, please contact Apex using the information below."
+      "Restart your computer, this refreshes the network connection",
+      "If on Wi-Fi, try toggling Wi-Fi off and back on, or switching to a wired connection if available",
+      "Check if others nearby are also having connectivity issues (helps identify a broader outage vs. your device)",
+      "For VPN issues, fully disconnect and reconnect the VPN client",
+      "Try accessing a website you don't normally visit to rule out a site-specific issue vs. a full outage"
     ],
-    turnaround: "Often fixed the same business day. If the whole office is down, it can take a few hours up to 1 business day.",
+    turnaround: "Typically 1-2 business days once submitted to Apex; faster for outage-level issues",
+    text: `For network issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
   },
 
   other: {
-    text: `For all other issues, contact Apex: 
-          <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-          <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Close the program you were using, then open it again.",
-      "If that does not help, restart your computer and try once more.",
-      "If the problem is still there, please contact Apex using the information below. Tell them what you were trying to do."
+      "Restart the affected application or device before reaching out",
+      "Note exactly what you were doing when the issue occurred, this speeds up diagnosis",
+      "Check if the issue is happening for others on your team, or just you",
+      "Take a screenshot of any error message if possible"
     ],
-    turnaround: "Someone usually gets back to you the same business day. Fixing the issue can take 1–3 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Apex",
+    text: `For all other issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
   }
@@ -72,162 +81,178 @@ const responses = {
 
 const softwareSupport = {
   "ms-365-apps": {
-    text: `For MS365 Issues, contact Apex: 
-        <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-        <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Close the program that is not working (Teams, Outlook, Word, Excel, and so on), then open it again.",
-      "If it still does not work, restart your computer and try that program one more time.",
-      "If that does not fix it, please contact Apex using the information below."
+      "Close and reopen the specific app (Word, Excel, Outlook, etc.)",
+      "Restart your computer, this resolves many temporary licensing/sync glitches",
+      "Check for pending updates: File > Account > Update Options > Update Now",
+      "Try signing out of your Microsoft account within the app and signing back in",
+      "If a specific file won't open, try opening it from the web version (office.com) to isolate the problem"
     ],
-    turnaround: "Most problems are handled the same business day. Bigger account issues can take 1–2 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Apex",
+    text: `For MS365 Issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
 
   "enabled": {
-    text: `For Enabled + issues, contact fetch: 
-        <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
-        <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     troubleshooting: [
-      "Close the Enabled+ page, wait a few seconds, then open it again.",
-      "If you still cannot get in, please contact fetch using the information below. Do not keep guessing your password."
+      "Refresh the page or fully close and reopen your browser",
+      "Try clearing your browser cache, or open the site in an incognito/private window to rule out a cache issue",
+      "Confirm you're using a supported browser (Chrome or Edge recommended)",
+      "Double check your login credentials are correct before assuming it's a system issue"
     ],
-    turnaround: "Login help is often 4–8 business hours. Bigger changes can take 1–3 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Fetch",
+    text: `For Enabled + issues, contact fetch: 
+<a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
+<a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     terminal: true
   },
 
   "rforce/rSuite": {
-    text: `For rForce/rSuite, contact fetch: 
-        <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
-        <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     troubleshooting: [
-      "Close the rForce or rSuite page, then open it again.",
-      "If it still will not load or let you in, please contact fetch using the information below."
+      "Refresh the page or fully close and reopen your browser",
+      "Try an incognito/private browser window to rule out a cache or extension conflict",
+      "Confirm you're using a supported browser (Chrome or Edge recommended)",
+      "Note the exact screen/step where the issue occurs, this helps Fetch troubleshoot faster"
     ],
-    turnaround: "Most issues take about 1 business day. Permission changes can take 2–3 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Fetch",
+    text: `For rForce/rSuite, contact fetch: 
+<a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
+<a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     terminal: true
   },
 
   "ensemble": {
-    text: `For Ensemble, contact fetch: 
-        <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
-        <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     troubleshooting: [
-      "Close Ensemble all the way, then open it again.",
-      "If it still does not work, please contact fetch using the information below."
+      "Refresh the page or fully close and reopen your browser",
+      "Try an incognito/private browser window to rule out a cache or extension conflict",
+      "Confirm you're using a supported browser (Chrome or Edge recommended)",
+      "Note the exact screen/step where the issue occurs, this helps Fetch troubleshoot faster"
     ],
-    turnaround: "You should hear back within 1 business day. Some fixes can take 2–4 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Fetch",
+    text: `For Ensemble, contact fetch: 
+<a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
+<a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     terminal: true
   },
 
   "five9": {
-    text: `For Five9 Login Issues, contact internal IT: 
-          <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>`,
     troubleshooting: [
-      "Make sure Caps Lock is off, then try logging in one more time.",
-      "If you still cannot get in, please contact Internal IT using the ticket link below. Do not keep guessing your password."
+      "Update both the Five9 Chrome extension and Google Chrome to their latest versions",
+      "Fully close and reopen Chrome (not just the tab) to refresh the extension's connection",
+      "Check if you're logged into Five9 in more than one place (another tab, device, or browser profile)",
+      "If your status seems stuck or incorrect, try logging out of Five9 completely and logging back in",
+      "Note the time the issue occurred and what you were doing (status change, call, screen lock, etc.)"
     ],
-    turnaround: "Usually the same or next business day after you submit a ticket.",
+    turnaround: "Usually same business day",
+    text: `For Five9, contact <a href="mailto:achaple@rbacharlotte.com" class="text-blue-600 underline">Angel Chaple</a>.`,
     terminal: true
   },
 
   "other": {
-    text: `For any other issues, contact Apex: 
-        <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-        <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Close the program, then open it again.",
-      "If that does not help, restart your computer and try once more.",
-      "If it still does not work, please contact Apex using the information below."
+      "Restart the application before reaching out",
+      "Note exactly what you were doing when the issue occurred",
+      "Check if the issue is happening for others on your team, or just you"
     ],
-    turnaround: "Apex usually responds the same business day. Fixing it often takes 1–3 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Apex",
+    text: `For any other issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   }
 };
 
 const passwordSupport = {
   "windows-login": {
-    text: `For Windows Login Issues, contact Apex: 
-          <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-          <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Look at the keyboard and make sure Caps Lock is off.",
-      "If you recently changed your password, try the new one (not the old one).",
-      "If it still says the password is wrong, stop trying so your account does not get locked. Please contact Apex using the information below."
+      "Double-check caps lock isn't on, and that you're using your most recent password",
+      "Confirm you're connected to the internet/network — some login checks require connectivity",
+      "If you recently changed your password elsewhere, allow a few minutes for it to sync",
+      "Try restarting the computer before assuming it's a lockout"
     ],
-    turnaround: "During business hours, a reset is often done in 30–60 minutes. If the account is locked, it may take the rest of the business day.",
+    turnaround: "Typically 1-2 business days once submitted to Apex",
+    text: `For Windows Login Issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
 
   "ms365-login": {
-    text: `For MS365 Login Issues, contact Apex: 
-          <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-          <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Close Teams or Outlook, then open it again and try your work email and password.",
-      "If your phone asks you to approve a sign-in, tap Yes.",
-      "If you still cannot get in, please contact Apex using the information below. Do not keep guessing your password."
+      "Double-check caps lock isn't on, and that you're using your most recent password",
+      "Try logging in at office.com directly in a browser to isolate whether it's app-specific",
+      "Clear your browser cache or try an incognito/private window",
+      "If prompted for multi-factor authentication, confirm your authentication method (phone/app) is working"
     ],
-    turnaround: "Usually the same business day. Setting up a new phone for sign-in can take 1 business day.",
+    turnaround: "Typically 1-2 business days once submitted to Apex",
+    text: `For MS365 Login Issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
 
   "five9-login": {
-    text: `For Five9 Login Issues, contact internal IT: 
-          <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>`,
     troubleshooting: [
-      "Make sure Caps Lock is off, then try logging in one more time.",
-      "If you still cannot get in, please contact Internal IT using the ticket link below."
+      "Double-check caps lock isn't on, and that you're using your most recent Five9 password",
+      "Try logging in from a different browser to rule out a browser-specific issue",
+      "Confirm you're using the correct Five9 login URL"
     ],
-    turnaround: "Usually the same or next business day.",
+    turnaround: "Usually same business day",
+    text: 'For Five9 passwords, contact <a href="mailto:achaple@rbacharlotte.com" class="text-blue-600 underline">Angel Chaple</a>.',
     terminal: true
   },
 
   "enabled-password": {
-    text: `For Enabled+ password issues, contact fetch: 
-          <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
-          <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     troubleshooting: [
-      "Try logging in one more time. Make sure Caps Lock is off.",
-      "If that does not work, please contact fetch using the information below. Do not share your password with anyone."
+      "Double-check caps lock isn't on, and that you're using your most recent password",
+      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Confirm you're on the correct login page/URL"
     ],
-    turnaround: "Often 4–8 business hours. Calling during support hours is usually the fastest.",
+    turnaround: "Typically 1-2 business days once submitted to Fetch",
+    text: `For Enabled+ password issues, contact fetch: 
+<a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
+<a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     terminal: true
   },
 
   "ensemble-password": {
-    text: `For Ensemble password issues, contact fetch: 
-          <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
-          <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     troubleshooting: [
-      "Try logging in one more time. Make sure Caps Lock is off.",
-      "If that does not work, please contact fetch using the information below. Do not keep guessing your password."
+      "Double-check caps lock isn't on, and that you're using your most recent password",
+      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Confirm you're on the correct login page/URL"
     ],
-    turnaround: "Usually the same business day. Trickier account problems can take up to 2 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Fetch",
+    text: `For Ensemble password issues, contact fetch: 
+<a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
+<a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     terminal: true
   },
 
   "culture-suite-password": {
-    text: `For CultureSuite Login Issues, contact Apex: 
-          <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
-          <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     troubleshooting: [
-      "Try logging in one more time with your work email. Make sure Caps Lock is off.",
-      "If you still cannot get in, please contact Apex using the information below."
+      "Double-check caps lock isn't on, and that you're using your most recent password",
+      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Confirm you're on the correct login page/URL"
     ],
-    turnaround: "Usually the same business day. New-hire access can take 1–2 business days.",
+    turnaround: "Typically 1-2 business days once submitted to Apex",
+    text: `For CultureSuite Login Issues, contact Apex: 
+<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
 
   "rforce-password": {
-    text: `For rForce/rSuite password issues, contact fetch: 
-          <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
-          <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     troubleshooting: [
-      "Try logging in one more time. Make sure Caps Lock is off.",
-      "If it still does not work, stop trying so your account does not get locked. Please contact fetch using the information below."
+      "Double-check caps lock isn't on, and that you're using your most recent password",
+      "Try an incognito/private browser window to rule out a saved-password conflict",
+      "Confirm you're on the correct login page/URL"
     ],
-    turnaround: "Usually within 1 business day. If you need help right away, calling is faster.",
+    turnaround: "Typically 1-2 business days once submitted to Fetch",
+    text: `For rForce/rSuite password issues, contact fetch: 
+<a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
+<a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
     terminal: true
   }
 };
