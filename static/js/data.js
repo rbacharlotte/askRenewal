@@ -11,6 +11,8 @@ const responses = {
     text: `For email issues, contact Apex: 
           <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
           <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     hasSubMenu: false,
     terminal: true
   },
@@ -24,6 +26,8 @@ const responses = {
   hardware: {
     text: `Contact Internal IT or submit a ticket: <br> (Internal: Angel/Derrick), 
         <a href="https://forms.office.com/pages/responsepage.aspx?id=-nTBzeyRlE6TkRgmWfkrVlZS8BJzWy9Cpqewcx-rfglUQ0FSSFJETFg1WTEwTFBNTUJTMlpNTlZKUy4u&origin=lprLink&route=shorturl" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>, <br>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     hasSubMenu: false,
     terminal: true
   },
@@ -32,6 +36,8 @@ const responses = {
     text: `For network issues, contact Apex: 
           <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
           <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     hasSubMenu: false,
     terminal: true
   },
@@ -40,6 +46,8 @@ const responses = {
     text: `For all other issues, contact Apex: 
           <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
           <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     hasSubMenu: false,
     terminal: true
   }
@@ -50,6 +58,8 @@ const softwareSupport = {
     text: `For MS365 Issues, contact Apex: 
         <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
         <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -57,6 +67,8 @@ const softwareSupport = {
     text: `For Enabled + issues, contact fetch: 
         <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
         <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -64,6 +76,8 @@ const softwareSupport = {
     text: `For rForce/rSuite, contact fetch: 
         <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
         <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -71,12 +85,16 @@ const softwareSupport = {
     text: `For Ensemble, contact fetch: 
         <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> / 
         <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
   "five9": {
     text: `For Five9 Login Issues, contact internal IT: 
           <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -84,6 +102,8 @@ const softwareSupport = {
     text: `For any other issues, contact Apex: 
         <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
         <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   }
 };
@@ -93,6 +113,8 @@ const passwordSupport = {
     text: `For Windows Login Issues, contact Apex: 
           <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
           <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -100,12 +122,16 @@ const passwordSupport = {
     text: `For MS365 Login Issues, contact Apex: 
           <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
           <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
   "five9-login": {
     text: `For Five9 Login Issues, contact internal IT: 
           <a href="https://forms.office.com/r/wSH8WXaGPu?origin=lprLink" target="_blank" class="text-blue-600 underline">Submit a ticket here</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -113,6 +139,8 @@ const passwordSupport = {
     text: `For Enabled+ password issues, contact fetch: 
           <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
           <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -120,6 +148,8 @@ const passwordSupport = {
     text: `For Ensemble password issues, contact fetch: 
           <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
           <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -127,6 +157,8 @@ const passwordSupport = {
     text: `For CultureSuite Login Issues, contact Apex: 
           <a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
           <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   },
 
@@ -134,6 +166,8 @@ const passwordSupport = {
     text: `For rForce/rSuite password issues, contact fetch: 
           <a href="tel:18887228610" class="text-blue-600 underline">1-888-722-8610</a> or visit 
           <a href="https://andersenprod.service-now.com/csm" target="_blank" class="text-blue-600 underline">ServiceNow Portal</a>`,
+    troubleshooting: ["PLACEHOLDER - ask Angel for real steps"],
+    turnaround: "PLACEHOLDER",
     terminal: true
   }
 };

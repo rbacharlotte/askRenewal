@@ -55,7 +55,10 @@ function handleSelection() {
     
     // Get response object
     const responseObj = passwordSupport[passwordType];
-    addMessage(responseObj.text, "bot");
+    addMessage(
+      responseObj.terminal ? formatTerminalResponse(responseObj) : responseObj.text,
+      "bot"
+    );
     
     // Check if terminal
     if (responseObj.terminal) {
@@ -78,7 +81,10 @@ function handleSelection() {
     
     // Get response object
     const responseObj = softwareSupport[software];
-    addMessage(responseObj.text, "bot");
+    addMessage(
+      responseObj.terminal ? formatTerminalResponse(responseObj) : responseObj.text,
+      "bot"
+    );
     
     // Check if terminal
     if (responseObj.terminal) {
@@ -101,7 +107,10 @@ function handleSelection() {
     
     // Get the response object
     const responseObj = responses[issue];
-    addMessage(responseObj.text, "bot");
+    addMessage(
+      responseObj.terminal ? formatTerminalResponse(responseObj) : responseObj.text,
+      "bot"
+    );
     
     // Check if this is terminal (end of conversation)
     if (responseObj.terminal) {

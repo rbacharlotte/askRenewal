@@ -1,5 +1,28 @@
 // utils.js
 
+function formatTerminalResponse(responseObj) {
+  const parts = [];
+  const steps = responseObj.troubleshooting || [];
+
+  if (steps.length > 0) {
+    parts.push('<p class="font-semibold mb-1">Try this first</p>');
+    parts.push('<ul class="list-disc list-inside mb-3 space-y-1">');
+    steps.forEach((step) => {
+      parts.push(`<li>${step}</li>`);
+    });
+    parts.push("</ul>");
+  }
+
+  if (responseObj.turnaround) {
+    parts.push(
+      `<p class="mb-3"><span class="font-semibold">Expected turnaround:</span> ${responseObj.turnaround}</p>`
+    );
+  }
+
+  parts.push(responseObj.text);
+  return parts.join("");
+}
+
 function addMessage(message, sender = "bot") {
   const div = document.createElement("div");
   div.innerHTML = message;
