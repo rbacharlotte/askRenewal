@@ -132,6 +132,9 @@ def submit_ticket():
         if parsed_origin.scheme not in {'http', 'https'} or parsed_origin.netloc.lower() != request.host.lower():
             return jsonify({'status': 'error', 'message': 'Ticket submissions must come from this site.'}), 403
 
+    if request.content_length and request.content_length > 16 * 1024:
+        return jsonify({'status': 'error', 'message': 'Ticket details are too large.'}), 413
+
     data = request.get_json(silent=True)
     if not isinstance(data, dict):
         return jsonify({'status': 'error', 'message': 'Please submit the ticket form.'}), 400
@@ -155,6 +158,7 @@ def submit_ticket():
     if (
         not ticket['name']
         or len(ticket['name']) > 120
+        or len(ticket['email']) > 254
         or any(ord(character) < 32 for character in ticket['name'])
         or not valid_ticket_email(ticket['email'])
         or ticket['category'] not in TICKET_CATEGORIES
