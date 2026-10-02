@@ -52,6 +52,10 @@ askRenewal is a simple, interactive **web-based IT directory ** designed to assi
 2. Open the `index.html` file in your browser.
    (Database would be needed to store any responses. To see live version that is connected to a DB, check out the link at the top of this page.) 
 
+### Ticket email configuration
+
+Ticket submissions are sent by the Flask backend over SMTP. Copy `.env.example` to `.env` for local development, then set the SMTP host, port, sending mailbox, and password. Set `IT_TICKET_EMAIL` to the internal IT destination. In production, configure these values as deployment environment variables; do not commit mail credentials. `SMTP_USE_SSL=true` is for providers using implicit TLS, typically on port 465. The default uses STARTTLS, typically on port 587.
+
 ---
 
 ## 🧠 Future Improvements

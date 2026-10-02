@@ -1,12 +1,17 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
+from email.message import EmailMessage
 import os
+import re
+import smtplib
+import ssl
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import json
 from datetime import datetime
 import pytz
+from urllib.parse import urlsplit
 
 load_dotenv()
 
@@ -38,6 +43,58 @@ client = gspread.authorize(creds)
 sheet_name = os.getenv('SHEET_NAME', 'IT_Help_Desk_Log')
 sheet = client.open(sheet_name).sheet1
 
+TICKET_CATEGORIES = {'Password', 'Software', 'Hardware', 'Email', 'Network', 'Other'}
+
+
+def send_ticket_email(ticket):
+    smtp_host = os.getenv('SMTP_HOST')
+    smtp_username = os.getenv('SMTP_USERNAME')
+    smtp_password = os.getenv('SMTP_PASSWORD')
+    recipient = os.getenv('IT_TICKET_EMAIL')
+    if not all((smtp_host, smtp_username, smtp_password, recipient)):
+        raise RuntimeError('Ticket email is not configured.')
+
+    try:
+        smtp_port = int(os.getenv('SMTP_PORT', '587'))
+    except ValueError as error:
+        raise RuntimeError('SMTP_PORT must be a number.') from error
+
+    message = EmailMessage()
+    message['Subject'] = f"askRenewal ticket: {ticket['category']}"
+    message['From'] = os.getenv('SMTP_FROM') or smtp_username
+    message['To'] = recipient
+    message['Reply-To'] = ticket['email']
+    message.set_content(
+        f"""A new askRenewal support ticket was submitted.
+
+Name: {ticket['name']}
+Email: {ticket['email']}
+Category: {ticket['category']}
+
+Issue details:
+{ticket['details']}
+"""
+    )
+
+    use_ssl = os.getenv('SMTP_USE_SSL', 'false').lower() == 'true'
+    context = ssl.create_default_context()
+    if use_ssl:
+        smtp_connection = smtplib.SMTP_SSL(
+            smtp_host, smtp_port, timeout=20, context=context
+        )
+    else:
+        smtp_connection = smtplib.SMTP(smtp_host, smtp_port, timeout=20)
+
+    with smtp_connection as server:
+        if not use_ssl:
+            server.starttls(context=context)
+        server.login(smtp_username, smtp_password)
+        server.send_message(message)
+
+
+def valid_ticket_email(value):
+    return bool(re.fullmatch(r'[^@\s]+@[^@\s]+\.[^@\s]+', value))
+
 @app.route('/api/submit', methods=['POST', 'OPTIONS'])
 def submit():
     if request.method == 'OPTIONS':
@@ -65,6 +122,59 @@ def submit():
     except Exception as e:
         print(f"ERROR: {str(e)}")
         return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/api/tickets', methods=['POST'])
+def submit_ticket():
+    origin = request.headers.get('Origin')
+    if origin:
+        parsed_origin = urlsplit(origin)
+        if parsed_origin.scheme not in {'http', 'https'} or parsed_origin.netloc.lower() != request.host.lower():
+            return jsonify({'status': 'error', 'message': 'Ticket submissions must come from this site.'}), 403
+
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify({'status': 'error', 'message': 'Please submit the ticket form.'}), 400
+
+    if data.get('website'):
+        return jsonify({'status': 'success'}), 202
+
+    name = data.get('name')
+    email = data.get('email')
+    category = data.get('category')
+    details = data.get('details')
+    if not all(isinstance(value, str) for value in (name, email, category, details)):
+        return jsonify({'status': 'error', 'message': 'Complete each required field.'}), 400
+
+    ticket = {
+        'name': name.strip(),
+        'email': email.strip(),
+        'category': category,
+        'details': details.strip()
+    }
+    if (
+        not ticket['name']
+        or len(ticket['name']) > 120
+        or any(ord(character) < 32 for character in ticket['name'])
+        or not valid_ticket_email(ticket['email'])
+        or ticket['category'] not in TICKET_CATEGORIES
+        or not ticket['details']
+        or len(ticket['details']) < 10
+        or len(ticket['details']) > 5000
+        or any(ord(character) < 32 and character not in '\r\n\t' for character in ticket['details'])
+    ):
+        return jsonify({'status': 'error', 'message': 'Check your details and try again.'}), 400
+
+    try:
+        send_ticket_email(ticket)
+    except RuntimeError as error:
+        app.logger.warning('Ticket email configuration error: %s', error)
+        return jsonify({'status': 'error', 'message': 'Ticket email is not configured yet. Please contact Internal IT directly.'}), 503
+    except (OSError, smtplib.SMTPException):
+        app.logger.exception('Unable to send askRenewal ticket email.')
+        return jsonify({'status': 'error', 'message': 'We could not send your ticket. Please try again or contact Internal IT directly.'}), 502
+
+    return jsonify({'status': 'success', 'message': 'Your ticket has been sent to Internal IT.'}), 201
 
 # Serve index.html at root
 @app.route('/')
