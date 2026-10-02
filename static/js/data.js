@@ -17,7 +17,7 @@ const responses = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
     text: `For email issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
@@ -41,7 +41,7 @@ const responses = {
     text: `Contact Internal IT or submit a ticket: <br> (Internal: Angel/Derrick), 
 <a href="mailto:achaple@rbacharlotte.com" class="text-blue-600 underline">Angel Chaple</a> <br>
         Submit tickets to Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
@@ -57,7 +57,7 @@ const responses = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex; faster for outage-level issues",
     text: `For network issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
@@ -72,7 +72,7 @@ const responses = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
     text: `For all other issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     hasSubMenu: false,
     terminal: true
@@ -90,7 +90,7 @@ const softwareSupport = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
     text: `For MS365 Issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
@@ -158,7 +158,7 @@ const softwareSupport = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
     text: `For any other issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   }
@@ -174,7 +174,7 @@ const passwordSupport = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
     text: `For Windows Login Issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
@@ -188,7 +188,7 @@ const passwordSupport = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
     text: `For MS365 Login Issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
@@ -238,7 +238,7 @@ const passwordSupport = {
     ],
     turnaround: "Typically 1-2 business days once submitted to Apex",
     text: `For CultureSuite Login Issues, contact Apex: 
-<a href="tel:18887228610" class="text-blue-600 underline">704-895-0010</a> option 7 / 
+<a href="tel:+17048950010" class="text-blue-600 underline">704-895-0010</a> option 7 /
 <a href="https://rba.myportallogin.com/" target="_blank" class="text-blue-600 underline">ApexManage360 Portal</a>`,
     terminal: true
   },
